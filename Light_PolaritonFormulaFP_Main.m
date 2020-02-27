@@ -54,7 +54,7 @@ G0=2*pi*DeltaE*e/h;               %% broadening of the transition
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % A. Gabbay, J. Reno, J. R. Wendt, A. Gin, M. C. Wanke, M. B. Sinclair, E. Shaner, and I. Brener,
-% ìInteraction between metamaterial resonators and intersubband transitions in semiconductor quantum wells,î 
+% ‚ÄúInteraction between metamaterial resonators and intersubband transitions in semiconductor quantum wells,‚Äù 
 % Appl. Phys. Lett. 98(20), 203103 (2011). 
 
 % J. Faist, "Optical properties of semiconductor"
@@ -116,6 +116,7 @@ end
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+Rb=repmat(Rb,[length(l3) 1]);
 TT=1-Rb;
 theta=pi;
 phi=2*pi*N3.*L3./LLambda;
@@ -124,7 +125,7 @@ delta=2*(phi-theta);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % see the Chapther of Vincenzo Savona for the formula in the book:
 % Confined Photon Systems
-% Fundamentals and Applications Lectures from the Summerschool Held in CargËse, Corsica, 3ñ15 August 1998
+% Fundamentals and Applications Lectures from the Summerschool Held in Carg√®se, Corsica, 3‚Äì15 August 1998
 % Linear Optical Properties of Semiconductor Microcavities with Embedded Quantum Wells, Vincenzo Savona, pages 173-242
 % 3) The Fabry-Perot resonator p184
 % https://link.springer.com/chapter/10.1007/BFb0104383
